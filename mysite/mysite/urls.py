@@ -20,5 +20,5 @@ from django.views.generic import RedirectView
 urlpatterns = [
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
-     path('', RedirectView.as_view(url='/polls/')),
+    path('', RedirectView.as_view(url='/polls/')),
 ]
